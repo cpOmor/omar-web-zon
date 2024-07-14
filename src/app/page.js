@@ -5,16 +5,19 @@ import Projects from "./Component/ui/home/projects/Projects";
 import Skillet from "./Component/ui/home/skillet/Skillet";
 import Testimonial from "./Component/ui/home/testimonial/Testimonial";
 import Contact from "./Component/ui/home/contact/Contact";
+import Container from "./Component/Container/Container";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <Skillet />
-      <Testimonial />
+      <Container>
+        <About />
+        <Services />
+        <Projects />
+        <Skillet />
+        <Testimonial />
+      </Container>
       <Contact />
     </>
   );

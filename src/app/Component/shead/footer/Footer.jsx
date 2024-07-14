@@ -2,8 +2,8 @@ import Container from "../../Container/Container";
 
 const Footer = () => {
   return (
-    <Container>
-      <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-8 mt-8">
+      <Container>
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
@@ -25,8 +25,8 @@ const Footer = () => {
             © {new Date().getFullYear()} Your Website. All rights reserved.
           </div>
         </div>
-      </footer>
-    </Container>
+      </Container>
+    </footer>
   );
 };
 export default Footer;
