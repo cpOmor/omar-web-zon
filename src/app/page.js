@@ -16,8 +16,8 @@ export default function Home() {
         <Services />
         <Projects />
         <Skillet />
-        <Testimonial />
       </Container>
+      <Testimonial />
       <Contact />
     </>
   );
