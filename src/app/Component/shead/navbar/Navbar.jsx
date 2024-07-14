@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <Container>
-      <nav expanded={expand} className={"sticky z-50  shadow-md  py-4 top-0"}>
+      <nav expanded={expand} className={"sticky !z-[99999]  shadow-md  py-4 top-0"}>
         <div className=" mx-auto flex justify-between items-center w-full">
           <Link
             href="./"

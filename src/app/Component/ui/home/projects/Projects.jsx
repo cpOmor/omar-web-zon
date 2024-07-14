@@ -1,9 +1,9 @@
 import Container from "../../../Container/Container";
 import Image from "next/image";
 import { HiExternalLink } from "react-icons/hi";
-import biyerFull from "./../../../../../assists/projects/biyer-ful.png";
-import digitalEcom from "./../../../../../assists/projects/digital-ecom.png";
-import innovatonHub from "./../../../../../assists/projects/innovaton-hub.png";
+import biyerFull from "./../../../../assists/projects/biyer-ful.png";
+import digitalEcom from "./../../../../assists/projects/digital-ecom.png";
+import innovatonHub from "./../../../../assists/projects/innovaton-hub.png";
 import Link from "next/link";
 
 const project = [

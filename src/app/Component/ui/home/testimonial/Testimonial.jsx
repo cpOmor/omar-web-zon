@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
-// import testimonialImage from './path-to-your-image.png'; // Adjust the path to your uploaded image
-// import Image from 'next/image';
 
 const Testimonial = () => {
   return (
@@ -15,13 +13,13 @@ const Testimonial = () => {
         {[0, 0, 0].map((item, i) => (
           <div key={i}>
             <div className="bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg relative">
-              <Image
+              {/* <Image
                 src="https://thumbs.dreamstime.com/b/vector-web-site-design-template-customer-review-rating-client-satisfaction-management-survey-landing-page-concepts-website-141939119.jpg?w=1200"
                 alt="Profile"
                 className="w-16 h-16 rounded-full mx-auto mb-4 border-4 border-white"
                 width={400}
                 height={500}
-              />
+              /> */}
               <h3 className="text-xl font-semibold text-center">Fantastic!</h3>
               <div className="flex justify-center text-yellow-400 mb-4">
                 {[...Array(5)].map((_, index) => (

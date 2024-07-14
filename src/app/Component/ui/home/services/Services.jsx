@@ -8,7 +8,6 @@ import {
 } from "react-icons/bs";
 import { DiCss3Full, DiW3C } from "react-icons/di";
 import { FaDocker, FaReact } from "react-icons/fa";
-import { FaCode } from "react-icons/fa6";
 
 // const services = [
 //   {

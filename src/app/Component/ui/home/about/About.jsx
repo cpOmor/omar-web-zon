@@ -1,6 +1,6 @@
 import Container from "../../../Container/Container";
 import { HiOutlineSun } from "react-icons/hi";
-import about from "../../../../../assists/about.png";
+import about from "../../../../assists/about.png";
 import Image from "next/image";
 
 const About = () => {
