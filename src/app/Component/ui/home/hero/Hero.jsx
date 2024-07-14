@@ -9,39 +9,39 @@ const Hero = () => {
   return (
     <>
       <Container className="!max-w-[1100px]">
-        <div className="flex justify-between !items-center h-screen">
+        <div className="flex-col-reverse flex md:flex-row justify-between !items-center md:h-screen h-[80vh] ">
           <div className=" text-white">
             {" "}
-            <duv md={7} className="home-header">
-              <h1 className="text-[2.4rem]">
+            <div className="home-header">
+              <h1 className="md:text-[2.4rem] text-[1.5rem] md:text-start text-center">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="text-[2.4rem]">
+              <h1 className="md:text-[2.4rem] text-[1.5rem]  md:text-start text-center">
                 {`I'M`}
                 <strong className="text-[#c55cee]"> Omar Faruk</strong>
               </h1>
 
-              <div className="text-[#c55cee] text-[2rem] font-bold">
+              <div className="text-[#c55cee] md:text-[2rem] text-[1.2rem] font-bold  md:text-start text-center">
                 <Type />
               </div>
               <div>
-                <button className="mt-4 flex items-center gap-2 bg-[#934cce5e] px-4 py-1 hover:outline hover:outline-1 hover:outline-[#623686]">
+                <button className="mt-4 md:mx-0 mx-auto flex items-center gap-2 bg-[#934cce5e] px-4 py-1 hover:outline hover:outline-1 hover:outline-[#623686]">
                   <span> Resume</span> <BsFillArrowRightCircleFill />
                 </button>
               </div>
-            </duv>
+            </div>
           </div>
-          <div className=" text-white mt-0">
+          <div className=" text-white mt-20 ">
             <Image
-              className="w-[380px] outline outline-gray-500 hover:outline-[#c55cee] rounded-[30px] -mt-10  rotate-3 hover:rotate-0  duration-300 ease-out"
+              className="md:w-[380px] w-[220px] outline outline-gray-500 hover:outline-[#c55cee] rounded-[30px] -mt-10  md:rotate-3 hover:rotate-0 rotate-0  duration-300 ease-out"
               src={homeSvg}
               width={1000}
               height={1200}
-              alt="omar faruk web designer web developer MARN stack developer"
+              alt="omar faruk web designer web developer MERN stack developer"
             ></Image>
           </div>
         </div>

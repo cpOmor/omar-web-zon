@@ -7,11 +7,11 @@ const About = () => {
   return (
     <Container>
       <div id="about" className="flex  justify-between mt-32 items-center">
-        <div className=" mb-10 w-1/2">
+        <div className=" mb-10 md:w-1/2">
           <div>
             <p>ABOUT ME</p>
           </div>
-          <h1 className=" text-justify">
+          <h1 className="text-justify md:text-[2rem] text-[1.2rem]">
             LET ME{" "}
             <span className="text-[#c55cee]  font-semibold">{`INTRODUCE`}</span>{" "}
             MYSELF
@@ -21,7 +21,7 @@ const About = () => {
               Hi Everyone, I am{" "}
               <span className="text-[#c55cee]">Omar Faruk </span>
             </h3>
-            <h3>
+            <h3 className="text-justify">
               I am a passionate
               <span className="text-[#c55cee]"> full stack developer </span>
               specializing in the
@@ -46,7 +46,7 @@ const About = () => {
               </span>
               .
             </h3>
-            <h3>
+            <h3 className="text-justify mt-1">
               Whenever possible, I also apply my passion for developing products
               with{" "}
               <span className="text-[#c55cee]">
@@ -133,7 +133,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-[400px] ">
+        <div className="w-[400px] hidden md:block">
           <Image
             className="w-[400px]"
             src={about}

@@ -51,7 +51,7 @@ export const Contact = () => {
                       <div className="flex md:flex-row flex-col  gap-4 items-center">
                         <div className="w-full">
                           <input
-                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base px-2 py-4 text-gray-500 focus:-[#f2849e]"
+                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base px-2 py-4 text-gray-500 focus:-[#f2849e] w-full"
                             type="text"
                             name="name"
                             placeholder="Full Name"
@@ -62,7 +62,7 @@ export const Contact = () => {
                         </div>
                         <div className="w-full">
                           <input
-                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e]"
+                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e] w-full"
                             type="email"
                             name="email"
                             placeholder="Email"
@@ -75,7 +75,7 @@ export const Contact = () => {
                       <div className="flex md:flex-row flex-col  gap-4 items-center mt-4">
                         <div className="w-full">
                           <input
-                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e]"
+                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e] w-full"
                             type="tel"
                             name="phone"
                             placeholder="Phone"
@@ -87,7 +87,7 @@ export const Contact = () => {
                         </div>
                         <div className="w-full">
                           <input
-                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e]"
+                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e] w-full"
                             type="url"
                             name="website"
                             placeholder="Website"
@@ -100,7 +100,7 @@ export const Contact = () => {
                       <div className="mt-4">
                         <div className="flex flex-col">
                           <textarea
-                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e]"
+                            className="placeholder:text-md border hover:border-red-300 placeholder:text-base  px-2 py-4 text-gray-500 focus:-[#f2849e] w-full"
                             name="message"
                             placeholder="Message"
                             rows="8"
@@ -184,9 +184,9 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="md:w-1/2 md:pl-20 md:py-8 pb-12 h-[400px] flex flex-col justify-between text-white">
+            <div className="md:w-1/2 md:pl-20 md:py-8 pb-12 h-[400px] md:flex flex-col justify-between text-white  hidden ">
               <div className="md:mt-0 mt-6">
-                <p>Give us a call</p>
+                <p>Give us a call</p> 
                 <div className="md:flex-col flex gap-2">
                   <h2 className=" text-[#c55cee] md:text-3xl text-xl md:font-extrabold font-bold">
                     +880 19702 99035

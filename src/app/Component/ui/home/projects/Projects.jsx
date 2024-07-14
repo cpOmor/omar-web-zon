@@ -33,18 +33,18 @@ const project = [
 const Projects = () => {
   return (
     <Container>
-      <div className="mt-32 items-center">
+      <div className="md:mt-32 mt-20 items-center">
         <div className="mb-10">
           <div>
             <p>PROJECTS</p>
           </div>
           <h1 className="font-normal">
             Recent{" "}
-            <span className="text-[#c55cee] font-semibold">Projects</span>
+            <span className="text-[#c55cee] font-semibold md:text-[2rem] text-[1.2rem]">Projects</span>
           </h1>
         </div>
 
-        <div className="grid grid-cols-3">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
           {project.map((item, i) => (
             <div key={i}>
               <div className="group relative w-full max-w-sm mx-auto rounded-lg shadow-lg overflow-hidden">

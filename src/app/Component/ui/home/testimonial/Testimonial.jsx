@@ -4,12 +4,12 @@ import { FaStar } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
-    <div className="mt-52 overflow-hidden bg-indigo-900 text-white p-8  shadow-xl mx-auto my-10 relative">
+    <div className="md:mt-52 mt-20 overflow-hidden bg-indigo-900 text-white p-8  shadow-xl mx-auto my-10 relative">
       <h2 className="text-2xl font-bold text-center mb-4">
         Your feedback and review are important to us!
       </h2>
 
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-4 ">
         {[0, 0, 0].map((item, i) => (
           <div key={i}>
             <div className="bg-gray-800 bg-opacity-50 p-6 rounded-lg shadow-lg relative">

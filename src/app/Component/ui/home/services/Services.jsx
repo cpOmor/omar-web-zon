@@ -159,11 +159,11 @@ const Services = () => {
   return (
     <Container>
       <div className="mt-32 items-center">
-        <div className=" mb-10 w-1/2">
+        <div className=" mb-10 md:w-1/2">
           <div>
             <p>SERVICES</p>
           </div>
-          <h1 className="font-normal">
+          <h1 className="font-normal text-[1.8rem]">
             How I Assist
             <span className="text-[#c55cee]  font-semibold">
               {" "}
@@ -171,7 +171,7 @@ const Services = () => {
             </span>{" "}
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
           {services.map((item, i) => (
             <div key={i}>
               <div style={{ opacity: 1, transform: "none" }} className=" mt-10">
