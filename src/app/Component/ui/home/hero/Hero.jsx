@@ -1,7 +1,7 @@
 import Container from "../../../Container/Container";
 import "./hero.css";
 import Image from "next/image";
-import homeSvg from "../../../../../assists/omar.png";
+import homeSvg from "../../../../assists/omar.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Type from "../../../type/Type";
 
