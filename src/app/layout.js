@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./Component/shead/navbar/Navbar";
 import Footer from "./Component/shead/footer/Footer";
 import BgColor from "./Component/Container/BgColor";
+import Head from "next/head";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <Link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+      
+      </Head>
       <BgColor />
 
       <body className={inter.className}>

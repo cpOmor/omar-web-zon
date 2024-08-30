@@ -1,11 +1,17 @@
+"use client";
 import Container from "../../../Container/Container";
 import "./hero.css";
 import Image from "next/image";
 import homeSvg from "../../../../assists/omar.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import Type from "../../../type/Type";
+import { useRef } from "react";
+import ReactToPrint from "react-to-print";
+import PDFGenerator from "@/utils/PDFGenerator";
+import Link from "next/link";
 
 const Hero = () => {
+  const componentRef = useRef(null);
   return (
     <>
       <Container className="!max-w-[1100px]">
@@ -29,9 +35,30 @@ const Hero = () => {
                 <Type />
               </div>
               <div>
-                <button className="mt-4 md:mx-0 mx-auto flex items-center gap-2 bg-[#934cce5e] px-4 py-1 hover:outline hover:outline-1 hover:outline-[#623686]">
-                  <span> Resume</span> <BsFillArrowRightCircleFill />
-                </button>
+                <div className="flex gap-4">
+                  <Link href="/resume">
+                    <button className="mt-4 md:mx-0 mx-auto flex items-center gap-2 bg-[#934cce5e] px-4 py-1 hover:outline hover:outline-1 hover:outline-[#623686]">
+                      <div className="hidden">
+                        <PDFGenerator
+                          componentRef={componentRef}
+                        ></PDFGenerator>
+                      </div>
+                      <span>CV </span> <BsFillArrowRightCircleFill />
+                    </button>
+                  </Link>
+
+                  <ReactToPrint
+                    trigger={() => (
+                      <p
+                        style={{ width: "120px" }}
+                        className="mt-4 justify-center  md:mx-0 mx-auto flex items-center gap-2 bg-[#934cce5e] px-4 py-1 hover:outline hover:outline-1 hover:outline-[#623686]"
+                      >
+                        Download
+                      </p>
+                    )}
+                    content={() => componentRef.current}
+                  />
+                </div>
               </div>
             </div>
           </div>
